@@ -61,11 +61,9 @@ def get_conversation_chain(vectorestore):
 
 def handle_userinput(user_question):
     response = st.session_state.conversation({'question': user_question})
-    st.write(response)
     st.session_state.chat_history = response['chat_history']
 
     for i, message in enumerate(st.session_state.chat_history):
-        print(i, message)
         if i % 2 == 0:
             st.write(user_template.replace(
                 "{{MSG}}", message.content), unsafe_allow_html=True)
@@ -103,7 +101,7 @@ def main():
 
                 # get text chunks
                 text_chunks = get_text_chunks(raw_text)
-                st.write(text_chunks)
+                # st.write(text_chunks)
                 
                 # create vector stores
                 vectorstore = get_vectorstore(text_chunks)
