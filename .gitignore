@@ -2,3 +2,5 @@
 .env
 langchain-tutorial/venv/
 langchain-csv-agent/venv-langchain-csv/
+cricket-etl-python/odis_json/
+falcon-local/
