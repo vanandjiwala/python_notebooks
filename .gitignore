@@ -1,6 +1,9 @@
 .idea
 .env
+duckdb/.venv/*
+duckdb/ipl_male_json/
 langchain-tutorial/venv/
+xlsxwritter_gallery/venv/
 langchain-csv-agent/venv-langchain-csv/
 cricket-etl-python/odis_json/
 falcon-local/
