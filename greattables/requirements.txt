@@ -1,0 +1,13 @@
+babel==2.16.0
+commonmark==0.9.1
+great-tables==0.10.0
+htmltools==0.5.3
+importlib_metadata==8.4.0
+importlib_resources==6.4.4
+numpy==2.1.0
+packaging==24.1
+polars==1.5.0
+SQLAlchemy==2.0.32
+typing_extensions==4.12.2
+zipp==3.20.0
+PyMySQL==1.1.1
