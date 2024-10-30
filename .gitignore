@@ -1,5 +1,6 @@
 .idea
 .env
+.venv/
 duckdb/.venv/*
 duckdb/ipl_male_json/
 langchain-tutorial/venv/
