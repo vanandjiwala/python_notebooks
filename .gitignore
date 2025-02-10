@@ -19,3 +19,4 @@ dsa
 *.png
 *.pdf
 llm/podcast/data/*
+*.pyc

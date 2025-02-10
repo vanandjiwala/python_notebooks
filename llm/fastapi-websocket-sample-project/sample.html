@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebSocket Test</title>
+  </head>
+  <body>
+    <h1>WebSocket Test for AI Agent</h1>
+    <div id="messages"></div>
+    <script>
+      // Note the use of "ws://" (or "wss://" for secure connections)
+      const ws = new WebSocket("ws://127.0.0.1:8000/ws/ai");
+      const messagesDiv = document.getElementById("messages");
+
+      ws.onopen = () => {
+        console.log("WebSocket connection established.");
+      };
+
+      ws.onmessage = (event) => {
+        const message = document.createElement("p");
+        message.textContent = event.data;
+        messagesDiv.appendChild(message);
+      };
+
+      ws.onerror = (error) => {
+        console.error("WebSocket error:", error);
+      };
+
+      ws.onclose = () => {
+        console.log("WebSocket connection closed.");
+      };
+    </script>
+  </body>
+</html>
