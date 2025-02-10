@@ -8,3 +8,14 @@ xlsxwritter_gallery/venv/
 langchain-csv-agent/venv-langchain-csv/
 cricket-etl-python/odis_json/
 falcon-local/
+.ipynb_checkpoints
+*.duckdb
+polars
+duckdb
+cricket-etl-python
+dsa
+*.db
+.DS_Store
+*.png
+*.pdf
+llm/podcast/data/*
